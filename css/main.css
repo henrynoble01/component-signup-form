@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #ff7a7a url("../images/bg-intro-mobile.png");
+}
+
+main {
+  display: block;
+  width: 90%;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .up-left {
+  width: 90%;
+}
+
+main .up-left h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+}
+
+main .up-left p {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+}
+
+main .down-right {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+main .down-right .blue-button {
+  width: 100%;
+  background: #6055a5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
+
+main .down-right aside {
+  background: #fff;
+  border-radius: 5px;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 5px #ff7a7a;
+          box-shadow: 0 2px 5px #ff7a7a;
+}
+
+main .down-right aside .input {
+  margin: 1rem auto;
+  padding: 1rem 1rem;
+}
+
+main .down-right aside .input .form .form-control {
+  position: relative;
+  padding: 1rem 0;
+}
+
+main .down-right aside .input .form .form-control input {
+  border: 1px solid #b9b6d3;
+  border-radius: 3px;
+  padding: 12px;
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .down-right aside .input .form .form-control img {
+  position: absolute;
+  margin-top: -2rem;
+  right: 10px;
+  display: block;
+  visibility: hidden;
+}
+
+main .down-right aside .input .form .form-control small {
+  visibility: hidden;
+  position: absolute;
+  display: block;
+  right: 10px;
+  color: #ff7a7a;
+}
+
+main .down-right aside .input .form .green-button {
+  width: 100%;
+  background: #38cc8c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+main .down-right aside .input p {
+  color: #b9b6d3;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+}
+
+main .down-right aside .input p span {
+  color: #ff7a7a;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,134 @@
+@import "resets";
+@import "variable";
+@import "background";
+@import "button";
+
+main {
+  display: block;
+  width: 90%;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  .up-left {
+    width: 90%;
+    h1 {
+      color: $text-color;
+      text-align: center;
+      font-weight: $font-weight3;
+    }
+
+    p {
+      text-align: center;
+      color: $text-color;
+      font-weight: $font-weight1;
+    }
+  }
+
+  .down-right {
+    margin-top: 3rem;
+    width: 100%;
+
+    .blue-button {
+      @include button($secondary-blue);
+      text-align: center;
+    }
+
+    aside {
+      background: $text-color;
+      border-radius: 5px;
+      width: 100%;
+      box-shadow: 0 2px 5px $primary-red;
+
+      .input {
+        margin: 1rem auto;
+        padding: 1rem 1rem;
+        // width: 90%;
+
+        .form {
+          & .form-control {
+            // margin-bottom: 1.7rem;
+            position: relative;
+            padding: 1rem 0;
+
+            input {
+              border: 1px solid $secondary-grayish-blue;
+              border-radius: 3px;
+              padding: 12px;
+              width: 99%;
+              margin-left: auto;
+              margin-right: auto;
+              // display: block;
+              // background-image: url(../images/icon-error.svg);
+              // background-repeat: no-repeat;
+              // padding-right: 16px;
+              // margin-right: auto;
+            }
+
+            & img {
+              position: absolute;
+              margin-top: -2rem;
+              right: 10px;
+              display: block;
+              visibility: hidden;
+            }
+
+            & small {
+              visibility: hidden;
+              position: absolute;
+              display: block;
+              right: 10px;
+              color: $primary-red;
+            }
+
+            //  i {
+            //   position: absolute;
+            //   margin-top: -25px;
+            //   right: 10px;
+            //   visibility: hidden;
+            // }
+
+            // small {
+            //   // visibility: hidden;
+            //   margin-right: auto;
+            //   position: absolute;
+            //   z-index: 100;
+            //   right: 10px;
+            // }
+
+            // .error small {
+            //   visibility: visible;
+            // }
+
+            // .success input {
+            //   border: 1px solid $primary-red;
+            // }
+
+            // .error {
+            //   border: 1px solid $primary-red;
+            // }
+
+            // .error {
+            //   border: 1px solid $primary-green;
+            // }
+          }
+
+          .green-button {
+            @include button($primary-green);
+          }
+        }
+
+        p {
+          color: $secondary-grayish-blue;
+          font-weight: $font-weight3;
+          font-size: 13px;
+          text-align: center;
+
+          span {
+            color: $primary-red;
+          }
+        }
+      }
+    }
+  }
+}
