@@ -66,13 +66,19 @@ form.addEventListener('submit', e => {
 });
 
 function addErrorTo(field, message){
-    const small =  form[field].parentNode.querySelector('small');
+    const formControl = form[field].parentNode;
+    formControl.classList.add('error');
+
+    const small =  formControl.querySelector('small');
     small.innerText = message;
-    small.style.opacity ='1';
+    // small.style.opacity ='1';
 }
 
 function removeErrorFrom(field) {
-    const small =  form[field].parentNode.querySelector('small');
+    const formControl = form[field].parentNode;
+    formControl.classList.remove('error');
+
+    const small =  formControl.querySelector('small');
     small.style.opacity ='0';
 }
 

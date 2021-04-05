@@ -1,0 +1,40 @@
+@mixin response {
+  @media screen and (min-width: $width) {
+    main {
+      display: flex;
+      gap: 3rem;
+      margin-top: 7rem;
+      margin-bottom: auto;
+
+      .up-left {
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: left;
+        width: 90%;
+
+        & h1 {
+          font-weight: $font-weight4;
+          font-size: 2.3rem;
+          text-align: left;
+          // display: none;
+        }
+
+        & p {
+          text-align: left;
+        }
+      }
+
+      .down-right {
+        width: 70%;
+      }
+    }
+
+    footer {
+      width: 70%;
+      display: block;
+      color: $text-color;
+      margin-top: 15rem;
+      margin-left: 15rem;
+    }
+  }
+}

@@ -3,3 +3,9 @@
 body {
   background: $primary-red url("../images/bg-intro-mobile.png");
 }
+
+@media screen and (min-width: $width) {
+  body {
+    background: $primary-red url("../images/bg-intro-desktop.png");
+  }
+}

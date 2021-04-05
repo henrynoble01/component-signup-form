@@ -2,6 +2,7 @@
 @import "variable";
 @import "background";
 @import "button";
+@import "repomse";
 
 main {
   display: block;
@@ -9,6 +10,8 @@ main {
   margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
+  // @include
+  // display: flex;
 
   .up-left {
     width: 90%;
@@ -43,11 +46,9 @@ main {
       .input {
         margin: 1rem auto;
         padding: 1rem 1rem;
-        // width: 90%;
 
         .form {
           & .form-control {
-            // margin-bottom: 1.7rem;
             position: relative;
             padding: 1rem 0;
 
@@ -58,11 +59,16 @@ main {
               width: 99%;
               margin-left: auto;
               margin-right: auto;
-              // display: block;
-              // background-image: url(../images/icon-error.svg);
-              // background-repeat: no-repeat;
-              // padding-right: 16px;
-              // margin-right: auto;
+            }
+
+            &.form-control.error input {
+              border-color: $primary-red;
+              color: $primary-red;
+              opacity: 1;
+            }
+
+            &.form-control.error input::placeholder {
+              color: $primary-red;
             }
 
             & img {
@@ -71,46 +77,20 @@ main {
               right: 10px;
               display: block;
               visibility: hidden;
+              height: 20px;
+            }
+
+            &.form-control.error img {
+              visibility: visible;
+              opacity: 1;
             }
 
             & small {
-              // visibility: hidden;
               position: absolute;
               display: block;
               right: 10px;
               color: $primary-red;
             }
-
-            //  i {
-            //   position: absolute;
-            //   margin-top: -25px;
-            //   right: 10px;
-            //   visibility: hidden;
-            // }
-
-            // small {
-            //   // visibility: hidden;
-            //   margin-right: auto;
-            //   position: absolute;
-            //   z-index: 100;
-            //   right: 10px;
-            // }
-
-            // .error small {
-            //   visibility: visible;
-            // }
-
-            // .success input {
-            //   border: 1px solid $primary-red;
-            // }
-
-            // .error {
-            //   border: 1px solid $primary-red;
-            // }
-
-            // .error {
-            //   border: 1px solid $primary-green;
-            // }
           }
 
           .green-button {
@@ -132,3 +112,11 @@ main {
     }
   }
 }
+
+footer {
+  // font-size: 16;
+  font-weight: $font-weight1;
+  color: $text-color;
+}
+
+@include response;

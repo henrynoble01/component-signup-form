@@ -11,6 +11,12 @@ body {
   background: #ff7a7a url("../images/bg-intro-mobile.png");
 }
 
+@media screen and (min-width: 640px) {
+  body {
+    background: #ff7a7a url("../images/bg-intro-desktop.png");
+  }
+}
+
 main {
   display: block;
   width: 90%;
@@ -80,12 +86,40 @@ main .down-right aside .input .form .form-control input {
   margin-right: auto;
 }
 
+main .down-right aside .input .form .form-control.form-control.error input {
+  border-color: #ff7a7a;
+  color: #ff7a7a;
+  opacity: 1;
+}
+
+main .down-right aside .input .form .form-control.form-control.error input::-webkit-input-placeholder {
+  color: #ff7a7a;
+}
+
+main .down-right aside .input .form .form-control.form-control.error input:-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+main .down-right aside .input .form .form-control.form-control.error input::-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+main .down-right aside .input .form .form-control.form-control.error input::placeholder {
+  color: #ff7a7a;
+}
+
 main .down-right aside .input .form .form-control img {
   position: absolute;
   margin-top: -2rem;
   right: 10px;
   display: block;
   visibility: hidden;
+  height: 20px;
+}
+
+main .down-right aside .input .form .form-control.form-control.error img {
+  visibility: visible;
+  opacity: 1;
 }
 
 main .down-right aside .input .form .form-control small {
@@ -116,5 +150,45 @@ main .down-right aside .input p {
 
 main .down-right aside .input p span {
   color: #ff7a7a;
+}
+
+footer {
+  font-weight: 400;
+  color: #fff;
+}
+
+@media screen and (min-width: 640px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 3rem;
+    margin-top: 7rem;
+    margin-bottom: auto;
+  }
+  main .up-left {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    width: 90%;
+  }
+  main .up-left h1 {
+    font-weight: 700;
+    font-size: 2.3rem;
+    text-align: left;
+  }
+  main .up-left p {
+    text-align: left;
+  }
+  main .down-right {
+    width: 70%;
+  }
+  footer {
+    width: 70%;
+    display: block;
+    color: #fff;
+    margin-top: 15rem;
+    margin-left: 15rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
